@@ -1,0 +1,27 @@
+{
+  "name": "bagel",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/jake-the-cake/bagel#readme",
+  "bugs": {
+    "url": "https://github.com/jake-the-cake/bagel/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jake-the-cake/bagel.git"
+  },
+  "license": "ISC",
+  "author": "Jason Thompson",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/routes.js",
+    "start": "nodemon lib/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "socket": "^1.1.158"
+  }
+}
