@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><%= err.status %> - <%= err.error %></title>
+    <title><%= error.status %> - <%= error.label %></title>
     <link rel="stylesheet" href="/static/css/style.css" />
   </head>
   <body>
     <div class="error-container">
-      <h1><%= err.status %></h1>
-      <p><i><%= err.error %></i></p>
+      <h1><%= error.status %></h1>
+      <p><i><%= error.label %></i></p>
       <hr />
-      <p><%= err.message %></p>
+      <p><%= error.message %></p>
     </div>
   </body>
 </html>
