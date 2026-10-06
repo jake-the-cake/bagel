@@ -1,5 +1,309 @@
-<% layout("web") -%>
-<div class="box">
-  <h1>Welcome</h1>
-  <input type="text" name="field" id="field" />
-</div>
+<% layout('base') -%>
+<section class="intro">
+  <div class="container intro__grid">
+    <div class="intro__description">
+      <p class="eyebrow">Web-based business tools.</p>
+
+      <h1>You own the data.</h1>
+
+      <p>
+        Manage your customers, employees, jobs, inventory, sales, estimates,
+        invoices, payments, and other business records in one application.
+      </p>
+
+      <p>
+        Each tool works from the same business records, keeping information
+        connected as it moves between customers, jobs, inventory, employees,
+        sales, and accounting.
+      </p>
+
+      <p>
+        Our network allows your employees and customers to access information
+        that you own without requiring a monthly software subscription or
+        forcing changes to the version you use.
+      </p>
+
+      <div class="intro__links">
+        <a href="/features"> Features → </a>
+
+        <a href="/demo"> Demo → </a>
+      </div>
+    </div>
+
+    <aside class="software-check">
+      <header class="software-check__header">
+        <span>YOUR CURRENT SOFTWARE</span>
+
+        <span class="software-check__count"> 1 / 5 </span>
+      </header>
+
+      <div class="software-check__body">
+        <p class="software-check__question">
+          Has a program you use changed its interface or workflow without giving
+          you the option to keep the version you already knew?
+        </p>
+
+        <div class="software-check__answers">
+          <button type="button" data-answer="yes">Yes</button>
+
+          <button type="button" data-answer="no">No</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="product-section">
+  <div class="container">
+    <header class="product-section__header">
+      <span>01</span>
+
+      <div>
+        <h2>What it is</h2>
+
+        <p>
+          A web application for storing and working with the information used to
+          operate a business.
+        </p>
+      </div>
+    </header>
+
+    <div class="product-list">
+      <article>
+        <h3>Customers</h3>
+        <p>
+          Contact information, locations, jobs, estimates, invoices, payments,
+          notes, and history.
+        </p>
+      </article>
+
+      <article>
+        <h3>Jobs</h3>
+        <p>
+          Work orders, assigned employees, tasks, materials, status, notes, and
+          related customer records.
+        </p>
+      </article>
+
+      <article>
+        <h3>Inventory</h3>
+        <p>
+          Products, parts, quantities, costs, pricing, purchasing, and usage.
+        </p>
+      </article>
+
+      <article>
+        <h3>Employees</h3>
+        <p>
+          Employee accounts, roles, permissions, assigned work, and access to
+          the parts of the application they need.
+        </p>
+      </article>
+
+      <article>
+        <h3>Sales & Billing</h3>
+        <p>
+          Estimates, invoices, payments, point-of-sale transactions,
+          receivables, and basic payables.
+        </p>
+      </article>
+
+      <article>
+        <h3>Customer Access</h3>
+        <p>
+          Customer-facing access to invoices, estimates, payments, and other
+          information that a business chooses to make available.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="product-section product-section--dark">
+  <div class="container">
+    <header class="product-section__header">
+      <span>02</span>
+
+      <div>
+        <h2>How the software is sold</h2>
+
+        <p>Purchasing software should not mean renting it indefinitely.</p>
+      </div>
+    </header>
+
+    <div class="version-example">
+      <div class="version-example__item">
+        <span class="version-example__version"> INVENTORY 1 </span>
+
+        <h3>Your current version</h3>
+
+        <p>
+          You purchased it. It works. You can continue using it without an
+          update changing how it behaves.
+        </p>
+
+        <span class="version-example__status"> OWNED </span>
+      </div>
+
+      <div class="version-example__arrow">→</div>
+
+      <div class="version-example__item">
+        <span class="version-example__version"> INVENTORY 2 </span>
+
+        <h3>A later version</h3>
+
+        <p>
+          A finished revision may add features, change the interface, or improve
+          how inventory is handled.
+        </p>
+
+        <p>
+          You can purchase it if those changes are useful. If they are not, keep
+          version 1.
+        </p>
+
+        <span class="version-example__status"> OPTIONAL </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="product-section">
+  <div class="container">
+    <header class="product-section__header">
+      <span>03</span>
+
+      <div>
+        <h2>What may have an ongoing cost</h2>
+
+        <p>
+          Some services cost money each time they are used. Those are treated
+          separately from ownership of the application.
+        </p>
+      </div>
+    </header>
+
+    <div class="plain-table">
+      <div class="plain-table__row plain-table__head">
+        <span>Service</span>
+        <span>How it is handled</span>
+      </div>
+
+      <div class="plain-table__row">
+        <span>Core application</span>
+        <span>Purchased version</span>
+      </div>
+
+      <div class="plain-table__row">
+        <span>Software updates</span>
+        <span>Optional new versions</span>
+      </div>
+
+      <div class="plain-table__row">
+        <span>AI services</span>
+        <span>Usage based</span>
+      </div>
+
+      <div class="plain-table__row">
+        <span>Other external APIs</span>
+        <span>Usage based where applicable</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="product-section product-section--accent">
+  <div class="container">
+    <header class="product-section__header">
+      <span>04</span>
+
+      <div>
+        <h2>After-hours answering</h2>
+
+        <p>
+          A planned part of the system is an AI-assisted answering service
+          connected to the business account.
+        </p>
+      </div>
+    </header>
+
+    <div class="answering-example">
+      <div>
+        <span>6:14 PM</span>
+        <p>“What time do you open tomorrow?”</p>
+        <strong>Answer automatically</strong>
+      </div>
+
+      <div>
+        <span>8:37 PM</span>
+        <p>“Can someone give me a price on replacing this?”</p>
+        <strong>Record as a possible sales lead</strong>
+      </div>
+
+      <div>
+        <span>11:52 PM</span>
+        <p>“The repair you did today is leaking badly.”</p>
+        <strong>Escalate to the appropriate person</strong>
+      </div>
+    </div>
+
+    <p class="section-note">
+      AI and telephone services depend on external providers and would therefore
+      have usage costs.
+    </p>
+  </div>
+</section>
+
+<section class="product-section">
+  <div class="container">
+    <header class="product-section__header">
+      <span>05</span>
+
+      <div>
+        <h2>Try the application</h2>
+
+        <p>
+          The demos are there to show how individual parts of the application
+          work. They do not require creating a business account.
+        </p>
+      </div>
+    </header>
+
+    <div class="demo-list">
+      <a href="/demo/customers">
+        <span>Customer records</span>
+        <span>Open demo →</span>
+      </a>
+
+      <a href="/demo/jobs">
+        <span>Jobs and tasks</span>
+        <span>Open demo →</span>
+      </a>
+
+      <a href="/demo/inventory">
+        <span>Inventory</span>
+        <span>Open demo →</span>
+      </a>
+
+      <a href="/demo/invoices">
+        <span>Estimates and invoices</span>
+        <span>Open demo →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="product-section signup-section">
+  <div class="container signup-section__inner">
+    <div>
+      <h2>Create a business account</h2>
+
+      <p>
+        Business owners create the business first and are enrolled as its first
+        user. Employees are added later through invitations from the business.
+      </p>
+    </div>
+
+    <a href="/signup" class="button button--primary"> Create Business </a>
+  </div>
+</section>

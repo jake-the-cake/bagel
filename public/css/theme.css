@@ -1,0 +1,397 @@
+/* =========================================================
+   BAGEL — SHARED THEME
+   ========================================================= */
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+img,
+picture,
+svg,
+canvas,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input,
+textarea,
+select {
+  color: inherit;
+}
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+:root {
+  /* PRIMARY — NAVY */
+
+  --navy: #071621;
+  --navy-rgb: 7 22 33;
+
+  --navy-95: rgb(var(--navy-rgb) / 0.95);
+  --navy-90: rgb(var(--navy-rgb) / 0.9);
+  --navy-80: rgb(var(--navy-rgb) / 0.8);
+  --navy-70: rgb(var(--navy-rgb) / 0.7);
+  --navy-50: rgb(var(--navy-rgb) / 0.5);
+  --navy-25: rgb(var(--navy-rgb) / 0.25);
+  --navy-10: rgb(var(--navy-rgb) / 0.1);
+  --navy-05: rgb(var(--navy-rgb) / 0.05);
+
+  /* ACCENT — TEAL */
+
+  --teal: #126170;
+  --teal-light: #1b7a8c;
+  --teal-dark: #0d4955;
+
+  --teal-rgb: 18 97 112;
+
+  --teal-90: rgb(var(--teal-rgb) / 0.9);
+  --teal-80: rgb(var(--teal-rgb) / 0.8);
+  --teal-70: rgb(var(--teal-rgb) / 0.7);
+  --teal-50: rgb(var(--teal-rgb) / 0.5);
+  --teal-25: rgb(var(--teal-rgb) / 0.25);
+  --teal-15: rgb(var(--teal-rgb) / 0.15);
+  --teal-10: rgb(var(--teal-rgb) / 0.1);
+
+  /* SECONDARY ACCENT — PINK */
+
+  --pink: #e26d8f;
+  --pink-light: #ee9ab2;
+  --pink-dark: #bd496b;
+
+  --pink-rgb: 226 109 143;
+
+  --pink-90: rgb(var(--pink-rgb) / 0.9);
+  --pink-80: rgb(var(--pink-rgb) / 0.8);
+  --pink-70: rgb(var(--pink-rgb) / 0.7);
+  --pink-50: rgb(var(--pink-rgb) / 0.5);
+  --pink-25: rgb(var(--pink-rgb) / 0.25);
+  --pink-15: rgb(var(--pink-rgb) / 0.15);
+  --pink-10: rgb(var(--pink-rgb) / 0.1);
+
+  /* NEUTRALS */
+
+  --white: #ffffff;
+  --white-rgb: 255 255 255;
+
+  --white-90: rgb(var(--white-rgb) / 0.9);
+  --white-80: rgb(var(--white-rgb) / 0.8);
+  --white-70: rgb(var(--white-rgb) / 0.7);
+  --white-50: rgb(var(--white-rgb) / 0.5);
+  --white-25: rgb(var(--white-rgb) / 0.25);
+  --white-10: rgb(var(--white-rgb) / 0.1);
+
+  /* STATUS */
+
+  --success: #23875d;
+  --warning: #d69432;
+  --danger: #c84b4b;
+
+  /* SHAPE */
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* MOTION */
+
+  --transition-fast: 120ms ease;
+  --transition: 180ms ease;
+}
+
+/* =========================================================
+   LIGHT THEME
+   ========================================================= */
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #f5f7f8;
+
+  --surface: #ffffff;
+  --surface-alt: #e9eff1;
+  --surface-accent: var(--teal-10);
+
+  --text: var(--navy);
+  --text-muted: rgb(var(--navy-rgb) / 0.65);
+  --text-subtle: rgb(var(--navy-rgb) / 0.45);
+
+  --border: rgb(var(--navy-rgb) / 0.15);
+  --border-strong: rgb(var(--navy-rgb) / 0.3);
+
+  --primary: var(--navy);
+  --primary-hover: #102b3d;
+  --primary-text: var(--white);
+
+  --accent: var(--teal);
+  --accent-hover: var(--teal-light);
+  --accent-text: var(--white);
+
+  --secondary: var(--pink);
+  --secondary-hover: var(--pink-dark);
+  --secondary-text: var(--navy);
+
+  --nav-bg: var(--navy);
+  --nav-text: var(--white);
+  --nav-muted: var(--white-70);
+  --nav-hover: var(--teal);
+
+  --link: var(--teal);
+  --link-hover: var(--pink-dark);
+
+  --input-bg: var(--white);
+  --input-border: rgb(var(--navy-rgb) / 0.25);
+
+  --overlay: rgb(var(--navy-rgb) / 0.7);
+
+  --shadow-sm: 0 2px 6px rgb(var(--navy-rgb) / 0.08);
+
+  --shadow-md: 0 6px 18px rgb(var(--navy-rgb) / 0.12);
+
+  --shadow-lg: 0 12px 32px rgb(var(--navy-rgb) / 0.16);
+}
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: var(--navy);
+
+  --surface: #0d222c;
+  --surface-alt: #12313b;
+  --surface-accent: var(--teal-15);
+
+  --text: #eef5f6;
+  --text-muted: rgb(238 245 246 / 0.7);
+  --text-subtle: rgb(238 245 246 / 0.45);
+
+  --border: var(--white-10);
+  --border-strong: var(--white-25);
+
+  --primary: var(--navy);
+  --primary-hover: #102b3d;
+  --primary-text: var(--white);
+
+  --accent: var(--teal);
+  --accent-hover: var(--teal-light);
+  --accent-text: var(--white);
+
+  --secondary: var(--pink);
+  --secondary-hover: var(--pink-light);
+  --secondary-text: var(--navy);
+
+  --nav-bg: var(--navy);
+  --nav-text: var(--white);
+  --nav-muted: var(--white-70);
+  --nav-hover: var(--teal);
+
+  --link: #5dafbd;
+  --link-hover: var(--pink);
+
+  --input-bg: #0d222c;
+  --input-border: var(--white-25);
+
+  --overlay: rgb(0 0 0 / 0.7);
+
+  --shadow-sm: 0 2px 6px rgb(0 0 0 / 0.25);
+
+  --shadow-md: 0 6px 18px rgb(0 0 0 / 0.35);
+
+  --shadow-lg: 0 12px 32px rgb(0 0 0 / 0.45);
+}
+
+/* =========================================================
+   SYSTEM DARK THEME
+   ========================================================= */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+
+    --bg: var(--navy);
+
+    --surface: #0d222c;
+    --surface-alt: #12313b;
+    --surface-accent: var(--teal-15);
+
+    --text: #eef5f6;
+    --text-muted: rgb(238 245 246 / 0.7);
+    --text-subtle: rgb(238 245 246 / 0.45);
+
+    --border: var(--white-10);
+    --border-strong: var(--white-25);
+
+    --primary: var(--navy);
+    --primary-hover: #102b3d;
+    --primary-text: var(--white);
+
+    --accent: var(--teal);
+    --accent-hover: var(--teal-light);
+    --accent-text: var(--white);
+
+    --secondary: var(--pink);
+    --secondary-hover: var(--pink-light);
+    --secondary-text: var(--navy);
+
+    --nav-bg: var(--navy);
+    --nav-text: var(--white);
+    --nav-muted: var(--white-70);
+    --nav-hover: var(--teal);
+
+    --link: #5dafbd;
+    --link-hover: var(--pink);
+
+    --input-bg: #0d222c;
+    --input-border: var(--white-25);
+
+    --overlay: rgb(0 0 0 / 0.7);
+
+    --shadow-sm: 0 2px 6px rgb(0 0 0 / 0.25);
+
+    --shadow-md: 0 6px 18px rgb(0 0 0 / 0.35);
+
+    --shadow-lg: 0 12px 32px rgb(0 0 0 / 0.45);
+  }
+}
+
+/* =========================================================
+   ELEMENT DEFAULTS
+   ========================================================= */
+
+::selection {
+  background: var(--pink);
+  color: var(--navy);
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+
+  background: var(--input-bg);
+  color: var(--text);
+
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius-md);
+
+  outline: none;
+
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--teal-15);
+}
+
+button {
+  padding: 0.65rem 1rem;
+
+  border: 0;
+  border-radius: var(--radius-md);
+
+  background: var(--accent);
+  color: var(--accent-text);
+
+  transition:
+    background var(--transition),
+    transform var(--transition);
+}
+
+button:hover {
+  background: var(--accent-hover);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}

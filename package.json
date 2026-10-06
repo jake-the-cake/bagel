@@ -27,5 +27,13 @@
     "jsonwebtoken": "^9.0.3",
     "pg": "^8.23.0",
     "socket": "^1.1.158"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
